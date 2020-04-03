@@ -23,6 +23,9 @@ class ContactDetailTableViewController: UITableViewController {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     
     
     // MARK: - Lifecycle
@@ -44,9 +47,11 @@ class ContactDetailTableViewController: UITableViewController {
         
         if let contact = contact {
             // UPDATE existing contact
-
+            
             contact.firstName = firstName
             contact.lastName = lastName
+            contact.phoneNumber = phoneNumberTextField.text ?? ""
+            contact.emailAddress = emailTextField.text ?? ""
             
             ContactController.shared.update(contact: contact) { (result) in
                 switch result {
@@ -58,13 +63,18 @@ class ContactDetailTableViewController: UITableViewController {
             }
         } else {
             // CREATE new contact
-            ContactController.shared.saveContact(firstName: firstName, lastName: lastName, phoneNumber: "", emailAddress: "") { (result) in
-                switch result {
-                case .success:
-                    print("Created contact.")
-                case .failure:
-                    print("Failed to create contact.")
-                }
+            ContactController.shared.saveContact(
+                firstName: firstName,
+                lastName: lastName,
+                phoneNumber: phoneNumberTextField.text ?? "",
+                emailAddress: emailTextField.text ?? "") { (result) in
+                    
+                    switch result {
+                    case .success:
+                        print("Created contact.")
+                    case .failure:
+                        print("Failed to create contact.")
+                    }
             }
         }
         navigationController?.popViewController(animated: true)
@@ -78,5 +88,5 @@ class ContactDetailTableViewController: UITableViewController {
         firstNameTextField.text = contact.firstName
         lastNameTextField.text = contact.lastName
     }
-
+    
 }

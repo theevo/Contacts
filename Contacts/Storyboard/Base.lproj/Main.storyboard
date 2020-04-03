@@ -72,7 +72,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBA-ec-I4k">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <rect key="frame" x="12" y="0.0" width="390" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -80,8 +80,8 @@
                                             <constraints>
                                                 <constraint firstItem="SBA-ec-I4k" firstAttribute="top" secondItem="dPy-s3-tsI" secondAttribute="top" id="8LZ-HU-xsR"/>
                                                 <constraint firstAttribute="bottom" secondItem="SBA-ec-I4k" secondAttribute="bottom" id="C0Y-U5-xvZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="SBA-ec-I4k" secondAttribute="trailing" id="w7K-Kp-nPu"/>
-                                                <constraint firstItem="SBA-ec-I4k" firstAttribute="leading" secondItem="dPy-s3-tsI" secondAttribute="leading" id="yaL-lp-4CH"/>
+                                                <constraint firstAttribute="trailing" secondItem="SBA-ec-I4k" secondAttribute="trailing" constant="12" id="w7K-Kp-nPu"/>
+                                                <constraint firstItem="SBA-ec-I4k" firstAttribute="leading" secondItem="dPy-s3-tsI" secondAttribute="leading" constant="12" id="yaL-lp-4CH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -97,16 +97,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-S3-CJA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <rect key="frame" x="12" y="0.0" width="390" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="gGE-S3-CJA" secondAttribute="bottom" id="PHt-V8-VyL"/>
-                                                <constraint firstItem="gGE-S3-CJA" firstAttribute="leading" secondItem="FRI-Y3-uaq" secondAttribute="leading" id="hF7-FX-d6G"/>
+                                                <constraint firstItem="gGE-S3-CJA" firstAttribute="leading" secondItem="FRI-Y3-uaq" secondAttribute="leading" constant="12" id="hF7-FX-d6G"/>
                                                 <constraint firstItem="gGE-S3-CJA" firstAttribute="top" secondItem="FRI-Y3-uaq" secondAttribute="top" id="iTR-vz-pON"/>
-                                                <constraint firstAttribute="trailing" secondItem="gGE-S3-CJA" secondAttribute="trailing" id="jr7-AJ-gFs"/>
+                                                <constraint firstAttribute="trailing" secondItem="gGE-S3-CJA" secondAttribute="trailing" constant="12" id="jr7-AJ-gFs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -120,6 +120,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ylg-2u-ULA" id="Wee-Lr-fKX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-Q7-e5e">
+                                                    <rect key="frame" x="12" y="0.0" width="390" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BHG-Q7-e5e" firstAttribute="leading" secondItem="Wee-Lr-fKX" secondAttribute="leading" constant="12" id="0gv-yl-Xx7"/>
+                                                <constraint firstItem="BHG-Q7-e5e" firstAttribute="top" secondItem="Wee-Lr-fKX" secondAttribute="top" id="cic-MN-yvJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="BHG-Q7-e5e" secondAttribute="trailing" constant="12" id="jAX-Ps-SoW"/>
+                                                <constraint firstAttribute="bottom" secondItem="BHG-Q7-e5e" secondAttribute="bottom" id="jlR-rR-nxy"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -132,6 +145,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rq7-WB-rfe" id="7NK-ka-oph">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-Pn-Fus">
+                                                    <rect key="frame" x="12" y="0.0" width="390" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kIy-Pn-Fus" firstAttribute="leading" secondItem="7NK-ka-oph" secondAttribute="leading" constant="12" id="jbA-Ij-vls"/>
+                                                <constraint firstAttribute="bottom" secondItem="kIy-Pn-Fus" secondAttribute="bottom" id="nOs-XH-I32"/>
+                                                <constraint firstItem="kIy-Pn-Fus" firstAttribute="top" secondItem="7NK-ka-oph" secondAttribute="top" id="pUv-Qw-6R4"/>
+                                                <constraint firstAttribute="trailing" secondItem="kIy-Pn-Fus" secondAttribute="trailing" constant="12" id="xvw-tj-xcP"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -150,8 +176,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="kIy-Pn-Fus" id="u66-8n-uQv"/>
                         <outlet property="firstNameTextField" destination="SBA-ec-I4k" id="eXe-Ne-QVT"/>
                         <outlet property="lastNameTextField" destination="gGE-S3-CJA" id="R9K-wZ-Hxf"/>
+                        <outlet property="phoneNumberTextField" destination="BHG-Q7-e5e" id="ElN-lb-6lb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEK-iB-1fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
