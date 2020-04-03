@@ -23,6 +23,12 @@ class Contact {
     var emailAddress: String?
     var recordID: CKRecord.ID
     
+    var fullName: String? {
+        get {
+            return "\(firstName) \(lastName)"
+        }
+    }
+    
     init(firstName: String,
          lastName: String,
          phoneNumber:String = "",
