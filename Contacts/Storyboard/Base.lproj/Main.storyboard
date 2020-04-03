@@ -41,7 +41,13 @@
                             <outlet property="delegate" destination="6IT-RG-qMI" id="pxV-w4-SDY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contacts" id="elu-en-Irz"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="elu-en-Irz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SKo-rE-9P7">
+                            <connections>
+                                <segue destination="1m9-f4-6HB" kind="show" id="B4M-nq-Pez"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoY-Te-ODD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,4 +175,7 @@
             <point key="canvasLocation" x="-328" y="137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="acV-bH-G4t"/>
+    </inferredMetricsTieBreakers>
 </document>
