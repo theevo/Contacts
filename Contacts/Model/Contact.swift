@@ -19,14 +19,14 @@ struct ContactConstants {
 class Contact {
     var firstName: String
     var lastName: String
-    var phoneNumber: String
-    var emailAddress: String
+    var phoneNumber: String?
+    var emailAddress: String?
     var recordID: CKRecord.ID
     
     init(firstName: String,
          lastName: String,
-         phoneNumber:String,
-         emailAddress: String,
+         phoneNumber:String = "",
+         emailAddress: String = "",
          recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         
         self.firstName = firstName
@@ -56,10 +56,16 @@ extension CKRecord {
         
         setValuesForKeys([
             ContactConstants.firstNameKey: contact.firstName,
-            ContactConstants.lastNameKey: contact.lastName,
-            ContactConstants.phoneNumberKey: contact.phoneNumber,
-            ContactConstants.emailAddressKey: contact.emailAddress
+            ContactConstants.lastNameKey: contact.lastName
         ])
+        
+        if let phoneNumber = contact.phoneNumber {
+            self.setValue(phoneNumber, forKey: ContactConstants.phoneNumberKey)
+        }
+        
+        if let emailAddress = contact.emailAddress {
+            self.setValue(emailAddress, forKey: ContactConstants.emailAddressKey)
+        }
     }
 }
 
