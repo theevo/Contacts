@@ -12,11 +12,7 @@ class ContactDetailTableViewController: UITableViewController {
     
     // MARK: - Properties
     
-    var contact: Contact? {
-        didSet {
-            updateView()
-        }
-    }
+    var contact: Contact?
     
     
     // MARK: - Outlets
@@ -32,6 +28,7 @@ class ContactDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateView()
     }
     
     
@@ -87,6 +84,8 @@ class ContactDetailTableViewController: UITableViewController {
         guard let contact = contact else { return }
         firstNameTextField.text = contact.firstName
         lastNameTextField.text = contact.lastName
+        phoneNumberTextField.text = contact.phoneNumber
+        emailTextField.text = contact.emailAddress
     }
     
 }

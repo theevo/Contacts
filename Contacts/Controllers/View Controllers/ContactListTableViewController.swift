@@ -10,10 +10,13 @@ import UIKit
 
 class ContactListTableViewController: UITableViewController {
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadContacts()
     }
+    
     
     // MARK: - Table view data source
     
@@ -79,6 +82,8 @@ class ContactListTableViewController: UITableViewController {
     }
     
     func updateViews() {
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
