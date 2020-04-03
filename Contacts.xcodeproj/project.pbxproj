@@ -13,6 +13,7 @@
 		ACC78F4F243789A700CDACCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC78F4E243789A700CDACCF /* Assets.xcassets */; };
 		ACC78F52243789A700CDACCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC78F50243789A700CDACCF /* LaunchScreen.storyboard */; };
 		ACC78F5C24378A0E00CDACCF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC78F5B24378A0E00CDACCF /* CloudKit.framework */; };
+		ACC78F6124378C6300CDACCF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F6024378C6300CDACCF /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ACC78F53243789A700CDACCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC78F59243789CA00CDACCF /* Contacts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contacts.entitlements; sourceTree = "<group>"; };
 		ACC78F5B24378A0E00CDACCF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		ACC78F6024378C6300CDACCF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		ACC78F44243789A400CDACCF /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				ACC78F5F24378C4A00CDACCF /* Model */,
 				ACC78F5D24378AC300CDACCF /* Storyboard */,
 				ACC78F5E24378ACD00CDACCF /* Resources */,
 			);
@@ -92,6 +95,14 @@
 				ACC78F53243789A700CDACCF /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACC78F5F24378C4A00CDACCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC78F6024378C6300CDACCF /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC78F6124378C6300CDACCF /* Contact.swift in Sources */,
 				ACC78F46243789A400CDACCF /* AppDelegate.swift in Sources */,
 				ACC78F48243789A400CDACCF /* SceneDelegate.swift in Sources */,
 			);
