@@ -57,6 +57,10 @@ class ContactDetailTableViewController: UITableViewController {
                 case .failure:
                     print("Failed to update contact.")
                 }
+                
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
         } else {
             // CREATE new contact
@@ -72,9 +76,12 @@ class ContactDetailTableViewController: UITableViewController {
                     case .failure:
                         print("Failed to create contact.")
                     }
+                    
+                    DispatchQueue.main.async {
+                        self.navigationController?.popViewController(animated: true)
+                    }
             }
         }
-        navigationController?.popViewController(animated: true)
     } // end saveButtonTapped
     
     
