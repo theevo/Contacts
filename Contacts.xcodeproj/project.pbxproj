@@ -16,6 +16,8 @@
 		ACC78F6124378C6300CDACCF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F6024378C6300CDACCF /* Contact.swift */; };
 		ACC78F65243792A100CDACCF /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F64243792A100CDACCF /* ContactController.swift */; };
 		ACC78F682437939900CDACCF /* ContactError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F672437939900CDACCF /* ContactError.swift */; };
+		ACC78F6B2437A27600CDACCF /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F6A2437A27600CDACCF /* ContactListTableViewController.swift */; };
+		ACC78F6D2437A28D00CDACCF /* ContactDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC78F6C2437A28D00CDACCF /* ContactDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		ACC78F6024378C6300CDACCF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		ACC78F64243792A100CDACCF /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		ACC78F672437939900CDACCF /* ContactError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactError.swift; sourceTree = "<group>"; };
+		ACC78F6A2437A27600CDACCF /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		ACC78F6C2437A28D00CDACCF /* ContactDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		ACC78F622437926500CDACCF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACC78F692437A26100CDACCF /* View Controllers */,
 				ACC78F662437938600CDACCF /* Helpers */,
 				ACC78F632437926F00CDACCF /* Model Controller */,
 			);
@@ -133,6 +138,15 @@
 				ACC78F672437939900CDACCF /* ContactError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ACC78F692437A26100CDACCF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACC78F6A2437A27600CDACCF /* ContactListTableViewController.swift */,
+				ACC78F6C2437A28D00CDACCF /* ContactDetailTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC78F6D2437A28D00CDACCF /* ContactDetailTableViewController.swift in Sources */,
+				ACC78F6B2437A27600CDACCF /* ContactListTableViewController.swift in Sources */,
 				ACC78F6124378C6300CDACCF /* Contact.swift in Sources */,
 				ACC78F46243789A400CDACCF /* AppDelegate.swift in Sources */,
 				ACC78F65243792A100CDACCF /* ContactController.swift in Sources */,
